@@ -1,0 +1,30 @@
+# Installed dependencies.
+node_modules/
+# Built web app.
+dist/
+# Built server bundle.
+server-dist/
+# Local secrets and settings.
+.env
+# Any other local environment file...
+.env.*
+# ...except the committed example.
+!.env.example
+# TypeScript incremental build info.
+*.tsbuildinfo
+# Playwright test output.
+test-results/
+# Playwright HTML report.
+playwright-report/
+# Generated design-tool files that should not be committed.
+.impeccable/mocks/
+# Design-tool decision logs.
+.impeccable/decisions/
+# Design-tool cache.
+.impeccable/cache/
+# Design-tool concept files.
+.impeccable/concepts/
+# Debug log.
+debug.log
+# All log files.
+*.log

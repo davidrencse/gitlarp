@@ -1,0 +1,190 @@
+/* Sharper system layer: flat hairline surfaces, tight radii, Inter + JetBrains Mono.
+   Loaded after styles.css so it refines the base rules rather than replacing them. */
+/* Design tokens (background, panel, line, text colors, mono font) and the base font settings. */
+:root{--bg:#0a0a0b;--panel:#0f0f11;--raised:#16161a;--line:#ffffff12;--line-strong:#ffffff24;--text:#ededef;--muted:#9d9da6;--mono:'JetBrains Mono Variable',ui-monospace,monospace;
+/* Base font features, text color, and font smoothing. */
+  font-family:'Inter Variable',system-ui,sans-serif;font-feature-settings:'cv11','ss01','ss03';background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+/* Make the page background use the dark token. */
+body{background:var(--bg)}
+/* Heading weight and letter spacing. */
+h1,h2,h3{font-weight:600;letter-spacing:-.022em}
+/* White keyboard focus ring. */
+:focus-visible{outline:1.5px solid #fff;outline-offset:2px}
+/* Text selection color. */
+::selection{background:#ffffff30;color:#fff}
+
+/* Surfaces */
+/* Styles for .glass. */
+.glass{background:rgba(15,15,17,.9);border:1px solid var(--line);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 #ffffff07}
+/* Styles for .modal. */
+.modal{border-color:var(--line-strong);background:#111113f5;box-shadow:0 24px 64px #000c,inset 0 1px 0 #ffffff0a;padding:22px}
+/* Styles for .modal-header h2. */
+.modal-header h2{font-size:17px}
+/* Styles for .toast. */
+.toast{border-radius:8px;font-size:13px;box-shadow:0 12px 40px #000a}
+
+/* Controls */
+/* Styles for .button. */
+.button{min-height:34px;padding:7px 13px;border-radius:6px;font-size:13px;font-weight:550;gap:7px;transition:background .12s,border-color .12s,color .12s}
+/* Styles for .button.primary. */
+.button.primary{background:#f4f4f5;border-color:#f4f4f5;box-shadow:inset 0 -1px 0 #0000001f}
+/* Styles for .button.secondary. */
+.button.secondary{background:#ffffff08;border-color:var(--line-strong);color:var(--text)}
+/* Styles for .button.secondary:hover:not(:disabled). */
+.button.secondary:hover:not(:disabled){background:#ffffff10;border-color:#ffffff3a}
+/* Styles for .icon-button. */
+.icon-button{width:30px;height:30px;border-radius:6px;color:var(--muted)}
+/* Styles for .field input,.field textarea,.field select,.token-input input,.repo-toolbar select,.search-field. */
+.field input,.field textarea,.field select,.token-input input,.repo-toolbar select,.search-field{border-radius:6px;border-color:var(--line-strong);background:#0b0b0d}
+/* Styles for .field input:focus,.field textarea:focus,.token-input input:focus. */
+.field input:focus,.field textarea:focus,.token-input input:focus{border-color:#ffffff66;box-shadow:0 0 0 3px #ffffff0f}
+/* Styles for kbd,code. */
+kbd,code{font-family:var(--mono);font-size:11px}
+
+/* Data reads as data: monospace for identifiers, counts and paths */
+/* Use the monospace font for identifiers, counts, paths, and similar data. */
+.repo-owner,.repo-meta,.repo-card-bottom,.nav-count,.visibility,.branch-badge,.project-evidence-strip,.tag,time,.repo-list-footer,.titlebar-path,.intelligence-provenance,.document-list small,.history-row small,.editor-toolbar>span{font-family:var(--mono);font-feature-settings:normal;letter-spacing:0}
+/* Smaller type in repo card meta rows. */
+.repo-card-bottom,.repo-meta{font-size:11px}
+
+/* Page rhythm */
+/* Styles for .page-heading. */
+.page-heading{margin-bottom:22px}
+/* Styles for .page-heading h1. */
+.page-heading h1{font-size:24px;line-height:1.2;letter-spacing:-.028em}
+/* Styles for .page-heading p. */
+.page-heading p{margin-top:6px;color:var(--muted)}
+/* Styles for .repo-card. */
+.repo-card{padding:16px 16px 0;background:var(--panel);transition:border-color .12s,background .12s}
+/* Styles for .repo-card:hover. */
+.repo-card:hover{border-color:var(--line-strong);background:#131316}
+/* Styles for .repo-card-top. */
+.repo-card-top{margin-bottom:14px}
+/* Styles for .repo-card-bottom. */
+.repo-card-bottom{margin-top:14px;padding:11px 0}
+/* Styles for .repo-name. */
+.repo-name{letter-spacing:-.015em}
+
+/* Title bar exists only inside the desktop app */
+/* Styles for .titlebar. */
+.titlebar{display:none}
+
+/* ---------- Desktop app shell ---------- */
+/* In the desktop app, the page fills the window and does not scroll itself. */
+[data-desktop],[data-desktop] body,[data-desktop] #root{height:100%;overflow:hidden}
+/* Desktop app shell grid: title bar row, sidebar and main columns. */
+[data-desktop] .app-shell{height:100vh;min-height:0;display:grid;grid-template-rows:44px minmax(0,1fr);grid-template-columns:236px minmax(0,1fr)}
+/* Desktop custom title bar: draggable, with room for the window controls. */
+[data-desktop] .titlebar{grid-row:1;grid-column:1/-1;display:flex;align-items:center;gap:16px;height:44px;padding:0 150px 0 14px;border-bottom:1px solid var(--line);background:var(--bg);-webkit-app-region:drag;user-select:none;z-index:40}
+/* On macOS, leave room on the left for the window buttons. */
+[data-desktop=darwin] .titlebar{padding:0 14px 0 84px}
+/* Title bar brand area. */
+.titlebar-brand{display:flex;align-items:center;gap:9px;width:208px;flex-shrink:0;font-size:13px;font-weight:600;letter-spacing:-.01em}
+/* Title bar logo icon size. */
+.titlebar-brand .brand-icon{width:22px;height:22px;border-radius:5px}
+/* Title bar logo SVG size. */
+.titlebar-brand .brand-icon svg{width:13px;height:13px}
+/* Title bar breadcrumb path. */
+.titlebar-path{display:flex;align-items:center;gap:8px;min-width:0;font-size:11.5px;color:var(--muted)}
+/* Current page title in the title bar (truncates with an ellipsis). */
+.titlebar-path strong{color:var(--text);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Title bar actions (not draggable). */
+.titlebar-actions{margin-left:auto;display:flex;align-items:center;gap:12px;-webkit-app-region:no-drag}
+/* Smaller icon buttons in the title bar. */
+.titlebar-actions .icon-button{width:28px;height:28px}
+/* Connected status text in the title bar. */
+.titlebar .connected-status{font-family:var(--mono);font-size:11px;color:var(--muted)}
+/* Green status dot in the title bar. */
+.titlebar .connected-status>span{background:#4ade80;box-shadow:0 0 0 3px #4ade8022}
+
+/* Hide web-only elements in the desktop app (top bar, header, intro, footer, and so on). */
+[data-desktop] .topbar,[data-desktop] .connection-header,[data-desktop] .sidebar .brand-link,[data-desktop] .sidebar-bottom>p,[data-desktop] .project-intro,[data-desktop] .app-footer,[data-desktop] .connection-footer{display:none}
+/* Desktop sidebar: a static column with a right border. */
+[data-desktop] .sidebar{position:relative;inset:auto;grid-row:2;grid-column:1;width:auto;border:0;border-right:1px solid var(--line);border-radius:0;background:#0c0c0e;backdrop-filter:none;-webkit-backdrop-filter:none;padding:12px 10px;overflow:auto}
+/* Workspace switch button styling in the desktop sidebar. */
+[data-desktop] .workspace-switch{margin:0 0 14px;padding:8px;border-radius:6px;border-color:var(--line);background:#ffffff04}
+/* Workspace avatar image size. */
+[data-desktop] .workspace-switch img{width:26px;height:26px;border-radius:5px}
+/* Spacing between sidebar navigation items. */
+[data-desktop] .sidebar nav{gap:2px}
+/* Desktop navigation item style. */
+[data-desktop] .nav-item{min-height:32px;padding:6px 10px;border-radius:6px;font-size:13px;gap:10px;color:var(--muted);border:0;position:relative}
+/* Navigation icon size. */
+[data-desktop] .nav-item svg{width:16px;height:16px}
+/* Navigation hover state. */
+[data-desktop] .nav-item:hover{background:#ffffff08;color:var(--text)}
+/* Active navigation item. */
+[data-desktop] .nav-item.active{background:#ffffff0e;color:#fff}
+/* White marker bar for the active navigation item. */
+[data-desktop] .nav-item.active::before{content:'';position:absolute;left:-10px;top:8px;bottom:8px;width:2px;border-radius:0 2px 2px 0;background:#fff}
+/* Bottom section of the desktop sidebar. */
+[data-desktop] .sidebar-bottom{padding-top:10px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+/* Main area grid placement in the desktop app. */
+[data-desktop] .main-shell{grid-row:2;grid-column:2;margin:0;min-width:0;min-height:0;display:flex;flex-direction:column}
+/* Scrollable main content area with responsive side padding. */
+[data-desktop] .main-content{flex:1;min-height:0;overflow:auto;max-width:none;margin:0;padding:28px max(32px,calc((100% - 1320px)/2)) 40px;scrollbar-gutter:stable}
+/* Dim the backdrop when signed in. */
+[data-desktop] .signed-in .liquid-backdrop{opacity:.22}
+/* Signed-out connection layout in the desktop app. */
+[data-desktop] .signed-out .connection-layout{grid-row:2;grid-column:1/-1;min-height:0;overflow:auto;max-width:none;margin:0;padding:72px max(56px,calc((100% - 1180px)/2)) 40px;gap:64px}
+/* Larger headline on the desktop sign-in screen. */
+[data-desktop] .connection-story h1{font-size:52px;letter-spacing:-.04em;line-height:1.05}
+/* Connection panel radius and padding. */
+[data-desktop] .connection-panel{border-radius:10px;padding:26px}
+
+/* Final blackroom pass: hard blacks, quiet chrome, and faster surface paints. */
+:root{--bg:#050506;--panel:#0b0b0d;--raised:#141416;--line:#ffffff12;--line-strong:#ffffff25;--text:#f3f3f4;--muted:#a4a4ab}
+body{background:#050506}
+.liquid-backdrop{contain:strict}
+.signed-in .liquid-backdrop{opacity:.16}
+.glass{backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.sidebar{background:rgba(8,8,9,.96);border-color:#ffffff18;box-shadow:0 18px 54px #0008}
+.topbar{height:68px;background:#060607eF;backdrop-filter:none;-webkit-backdrop-filter:none;border-color:#ffffff12}
+.main-content{max-width:1460px;padding-top:34px}
+.page-heading h1{font-size:27px;font-weight:620;letter-spacing:-.035em}
+.page-heading p{color:#b0b0b7}
+.project-intro{min-height:132px;padding:27px 30px;border:1px solid #ffffff17;background:linear-gradient(110deg,#111113,#09090a 74%);backdrop-filter:none;-webkit-backdrop-filter:none}
+.project-intro h2{font-size:21px;letter-spacing:-.025em}
+.intro-symbol{width:64px;height:64px;border-radius:12px;background:#ffffff05;color:#f5f5f5}
+.repo-toolbar{gap:9px;margin-bottom:16px}
+.search-field,.repo-toolbar>select{min-height:38px;background:#080809;border-color:#ffffff20}
+.repo-card{padding:17px 17px 0;border-color:#ffffff15;background:#0b0b0d;content-visibility:auto;contain-intrinsic-size:250px}
+.repo-card:hover{transform:translateY(-2px);border-color:#ffffff38;background:#111113}
+.repo-card,.repo-card:hover{transition:transform .16s ease,border-color .16s ease,background .16s ease}
+.repo-name{font-size:16px}
+.repo-description{color:#b5b5bc;line-height:1.7}
+.repo-card-bottom{border-color:#ffffff12;color:#aaaab1}
+.repo-loading-more{margin:16px 0;color:#aaaab1;font-size:12px;text-align:center}
+.document-layout,.editor,.project-check,.publish-summary,.settings-section,.history-section,.activity-list,.commit-plan{border-radius:9px}
+.document-layout{background:#0a0a0c;border-color:#ffffff18}
+.document-list{background:#080809;border-color:#ffffff12}
+.document-list button{border-radius:5px}
+.document-view{background:#0b0b0d}
+.markdown-preview{max-width:84ch;margin:0 auto;padding:36px 44px;line-height:1.82}
+.markdown-preview p,.markdown-preview li{color:#d1d1d5}
+.markdown-preview h1,.markdown-preview h2,.markdown-preview h3{color:#f5f5f6}
+.connection-panel{background:#0b0b0df2;border:1px solid #ffffff19;box-shadow:0 26px 80px #0009}
+.connection-story h1{letter-spacing:-.045em}
+.button.primary{background:#f4f4f5;color:#09090a}
+.button.primary:hover:not(:disabled){background:#fff;transform:translateY(-1px)}
+.button.secondary{background:#ffffff06}
+.loading-panel{color:#c0c0c6}
+.repo-skeleton{background:#0b0b0d}
+.repo-skeleton>span{background:linear-gradient(90deg,#ffffff08,#ffffff13,#ffffff08);background-size:200% 100%;animation:repo-shimmer 1.4s linear infinite}
+@keyframes repo-shimmer{to{background-position:-200% 0}}
+.markdown-preview :where(pre,blockquote,table){max-width:100%;overflow:auto}
+.markdown-preview :where(code){color:#f1f1f2}
+.markdown-preview :where(a){text-decoration:underline;text-decoration-color:#777;text-underline-offset:3px}
+@media(max-width:760px){
+  .main-content{padding:25px 18px 18px}
+  .topbar{height:62px;background:#060607}
+  .project-intro{min-height:0;padding:21px;margin-bottom:23px}
+  .project-intro h2{font-size:19px}
+  .repo-card{content-visibility:visible}
+  .markdown-preview{padding:25px 20px}
+  .connection-panel{padding:23px}
+}
+@media(prefers-reduced-motion:reduce){.repo-skeleton>span{animation:none}}
+
+/* Performance: backdrop blur re-filters everything behind a panel on every animation frame, so it is turned off. Panels are already near-opaque. */
+*,*::before,*::after{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}

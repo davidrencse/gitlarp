@@ -1,0 +1,55 @@
+# Workflow name shown in the GitHub Actions tab.
+name: App checks
+
+# Run on every push and every pull request.
+on:
+  push:
+  pull_request:
+
+# Give the workflow read-only access to the repository contents.
+permissions:
+  contents: read
+
+# Allow only one run per workflow and branch at a time.
+concurrency:
+  # Group key made from the workflow name and the git ref.
+  group: checks-${{ github.workflow }}-${{ github.ref }}
+  # Cancel an older run when a newer one starts.
+  cancel-in-progress: true
+
+# Jobs in this workflow.
+jobs:
+  # A single job that runs all checks.
+  checks:
+    # Run on the latest Ubuntu runner.
+    runs-on: ubuntu-latest
+    # Stop the job after 15 minutes.
+    timeout-minutes: 15
+    # Steps of the job.
+    steps:
+      # Check out the code (pinned to a commit SHA for supply-chain safety).
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          # Do not keep the GitHub token in the git config.
+          persist-credentials: false
+      # Install Node.js (pinned to a commit SHA).
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          # Use Node.js 22.
+          node-version: '22'
+          # Cache npm downloads.
+          cache: npm
+      # Install exact dependencies from package-lock.json.
+      - run: npm ci
+      # Type-check and build the web app and the server bundle.
+      - run: npm run build
+      # Run the unit and integration tests.
+      - run: npm test
+      # Install Chromium and its system dependencies for Playwright.
+      - run: npx playwright install --with-deps chromium
+      # Run the browser end-to-end tests.
+      - run: npm run test:e2e
+      # Check that the production server starts and serves the app.
+      - run: npm run test:production
+      # Fail on known high-severity dependency vulnerabilities.
+      - run: npm audit --audit-level=high

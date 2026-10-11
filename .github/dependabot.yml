@@ -1,0 +1,24 @@
+# Dependabot configuration format version.
+version: 2
+# What Dependabot should keep up to date.
+updates:
+  # npm dependencies...
+  - package-ecosystem: npm
+    # ...from package.json in the repository root.
+    directory: /
+    # Check for updates...
+    schedule:
+      # ...once a week.
+      interval: weekly
+    # Open at most five update pull requests at a time.
+    open-pull-requests-limit: 5
+  # GitHub Actions used by the workflows...
+  - package-ecosystem: github-actions
+    # ...defined under the root.
+    directory: /
+    # Check for updates...
+    schedule:
+      # ...once a week.
+      interval: weekly
+    # Open at most five update pull requests at a time.
+    open-pull-requests-limit: 5

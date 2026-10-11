@@ -1,0 +1,15 @@
+{
+  /* TypeScript compiler options. */
+  "compilerOptions": {
+    /* Modern JavaScript and the DOM libraries. */
+    "target": "ES2022", "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    /* Bundler-style modules and the React JSX transform. */
+    "module": "ESNext", "moduleResolution": "Bundler", "jsx": "react-jsx",
+    /* Strict type checking. */
+    "strict": true, "skipLibCheck": true, "esModuleInterop": true,
+    /* JSON imports; type checking only with no emit; Node and Vite types. */
+    "resolveJsonModule": true, "noEmit": true, "types": ["node", "vite/client"]
+  },
+  /* Folders and files that are type-checked. */
+  "include": ["src", "server", "shared", "tests", "vite.config.ts"]
+}

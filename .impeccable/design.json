@@ -1,0 +1,633 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T16:40:43.115321+00:00",
+  "title": "Design System: GitLarp",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Background Black",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "action-ink": {
+        "role": "primary",
+        "displayName": "Action Ink",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "White Ink",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "primary-white": {
+        "role": "primary",
+        "displayName": "Action White",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "white": {
+        "role": "primary",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "subtle": {
+        "role": "neutral",
+        "displayName": "Subtle",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "supporting": {
+        "role": "neutral",
+        "displayName": "Supporting Gray",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Black",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "field-text": {
+        "role": "neutral",
+        "displayName": "Field Text",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "field-border": {
+        "role": "neutral",
+        "displayName": "Field Border",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "glass": {
+        "role": "neutral",
+        "displayName": "Frosted Charcoal",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "glass-border": {
+        "role": "neutral",
+        "displayName": "Glass Border",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "sidebar-glass": {
+        "role": "neutral",
+        "displayName": "Navigation Glass",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "secondary-glass": {
+        "role": "neutral",
+        "displayName": "Secondary Glass",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "secondary-border": {
+        "role": "neutral",
+        "displayName": "Secondary Border",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "secondary-hover": {
+        "role": "neutral",
+        "displayName": "Secondary Hover",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "repository-glass": {
+        "role": "neutral",
+        "displayName": "Repository Glass",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "connection-glass": {
+        "role": "neutral",
+        "displayName": "Connection Glass",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "editor-glass": {
+        "role": "neutral",
+        "displayName": "Workbench Glass",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "source": {
+        "role": "neutral",
+        "displayName": "Source Black",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "source-text": {
+        "role": "neutral",
+        "displayName": "Source Text",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "fallback": {
+        "role": "neutral",
+        "displayName": "Fallback Charcoal",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "selected": {
+        "role": "neutral",
+        "displayName": "Selected Navigation",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26.43% 0 0)",
+          "oklch(37.86% 0 0)",
+          "oklch(49.29% 0 0)",
+          "oklch(60.71% 0 0)",
+          "oklch(72.14% 0 0)",
+          "oklch(83.57% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Connection Display",
+        "purpose": "Connection heading at desktop; responsive sizes are documented in Layout and Typography."
+      },
+      "heading": {
+        "displayName": "Page Heading",
+        "purpose": "Repository library heading; project headings share its size with contextual line height."
+      },
+      "section": {
+        "displayName": "Workbench Section",
+        "purpose": "Configure and review sections, with responsive 23px mobile sizes."
+      },
+      "body": {
+        "displayName": "Description",
+        "purpose": "Page and connection-panel prose; sizes and line heights vary by context."
+      },
+      "repository-title": {
+        "displayName": "Repository Name",
+        "purpose": "DM Sans action text in library cards."
+      },
+      "label": {
+        "displayName": "Task Label",
+        "purpose": "Form and module labels; 12px mobile workflow/file-review/check/commit labels."
+      },
+      "button": {
+        "displayName": "Action Label",
+        "purpose": "Default primary and secondary action text."
+      },
+      "code": {
+        "displayName": "Editable Source",
+        "purpose": "Source and original-file content; editable source increases to 16px on mobile."
+      }
+    },
+    "shadows": [
+      {
+        "name": "connection",
+        "value": "0 25px 90px #0007",
+        "purpose": "Ambient depth beneath the connection plate."
+      },
+      {
+        "name": "toast",
+        "value": "0 12px 45px #0009",
+        "purpose": "Transient floating status."
+      },
+      {
+        "name": "dialog",
+        "value": "0 30px 100px #0008",
+        "purpose": "Native modal elevation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control",
+        "value": "180ms ease",
+        "purpose": "Background, border, and transform transitions; ease is the CSS default."
+      },
+      {
+        "name": "active-press",
+        "value": "translateY(1px)",
+        "purpose": "Active primary and secondary buttons."
+      },
+      {
+        "name": "repository-arrow",
+        "value": "translateX(3px)",
+        "purpose": "Repository-name hover affordance."
+      },
+      {
+        "name": "mobile-navigation",
+        "value": "200ms ease",
+        "purpose": "Sidebar transform."
+      },
+      {
+        "name": "spinner",
+        "value": "1s linear infinite",
+        "purpose": "Loading rotation."
+      },
+      {
+        "name": "skeleton",
+        "value": "1.6s ease-in-out infinite",
+        "purpose": "Skeleton opacity reaches 0.5 at the midpoint."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation:none!important;transition:none!important;scroll-behavior:auto!important",
+        "purpose": "Global CSS reduced-motion override; WebGL also checks the media query."
+      },
+      {
+        "name": "webgl",
+        "value": "Display-synchronized requestAnimationFrame; pointer easing rate 6/s; workspace easing rate 4/s; DPR <= 1.25; backing width <= 1600px",
+        "purpose": "Native silver lens with exponential pointer smoothing and continuous phase; retains the shader through pause/workspace changes, stops scheduling while hidden/offscreen, holds still on pause/reduced motion, and reveals static fallback on failure."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "viewport-560",
+        "value": "560px"
+      },
+      {
+        "name": "viewport-760",
+        "value": "760px"
+      },
+      {
+        "name": "viewport-950",
+        "value": "950px"
+      },
+      {
+        "name": "viewport-1100",
+        "value": "1100px"
+      },
+      {
+        "name": "viewport-1200",
+        "value": "1200px"
+      },
+      {
+        "name": "viewport-1600",
+        "value": "1600px"
+      }
+    ],
+    "glass": [
+      {
+        "name": "base",
+        "value": "blur(22px)",
+        "purpose": "Reusable glass and navigation rail; prefixed backdrop filtering is present on reusable glass."
+      },
+      {
+        "name": "topbar",
+        "value": "blur(18px)",
+        "purpose": "Utility bar over a #05050555 ground."
+      },
+      {
+        "name": "intro",
+        "value": "blur(20px)",
+        "purpose": "Library introduction with a faint white alpha gradient."
+      },
+      {
+        "name": "workbench",
+        "value": "blur(16px)",
+        "purpose": "Module list, publishing summary, editor enclosure, and commit-plan enclosure."
+      },
+      {
+        "name": "dialog",
+        "value": "blur(30px)",
+        "purpose": "Native dialog; its ::backdrop uses blur(9px) and #000a."
+      },
+      {
+        "name": "fallback",
+        "value": "@supports not (backdrop-filter:blur(1px))",
+        "purpose": "Main glass, sidebar, connection panel, and modal use #151515; topbar uses #080808."
+      },
+      {
+        "name": "opaque-source",
+        "value": "background:#0a0a0a;color:#e0e0e0",
+        "purpose": "Source-editor and original-content overrides preserve opaque readable code."
+      },
+      {
+        "name": "static-lens",
+        "value": "radial-gradient(ellipse at 43% 47%,#393939 0%,#111 25%,#050505 55%)",
+        "purpose": "Visible when WebGL is unsupported, shader compilation/linking fails, or its context is lost."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "White next-step workflow action.",
+      "html": "<button class=\"ds-primary\">Continue to publish</button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;border:1px solid transparent;border-radius:9px;padding:11px 16px;font-family:'DM Sans Variable',sans-serif;font-size:13px;font-weight:600;white-space:nowrap;cursor:pointer;transition:background .18s,border-color .18s,transform .18s}.ds-primary:active:not(:disabled){transform:translateY(1px)}.ds-primary:disabled{opacity:.45;cursor:not-allowed}.ds-primary:focus-visible{outline:2px solid #fff;outline-offset:4px}.ds-primary{background:#f0f0f0;color:#080808;border-color:#f0f0f0}.ds-primary:hover:not(:disabled){background:#fff;border-color:#fff}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-card,.ds-card-title{transition:none!important}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Glass secondary action with a neutral outline.",
+      "html": "<button class=\"ds-secondary\">Download ZIP</button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;border:1px solid transparent;border-radius:9px;padding:11px 16px;font-family:'DM Sans Variable',sans-serif;font-size:13px;font-weight:600;white-space:nowrap;cursor:pointer;transition:background .18s,border-color .18s,transform .18s}.ds-secondary:active:not(:disabled){transform:translateY(1px)}.ds-secondary:disabled{opacity:.45;cursor:not-allowed}.ds-secondary:focus-visible{outline:2px solid #fff;outline-offset:4px}.ds-secondary{background:rgba(255,255,255,.055);border-color:#3c3c3c;color:#eee}.ds-secondary:hover:not(:disabled){background:#292929;border-color:#777}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-card,.ds-card-title{transition:none!important}}"
+    },
+    {
+      "name": "Icon Button",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "Named compact action in toolbars or file review.",
+      "html": "<button class=\"ds-icon\" aria-label=\"Download this file\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3\"/></svg></button>",
+      "css": ".ds-icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border:0;border-radius:8px;background:none;color:#bcbcbc;cursor:pointer}.ds-icon:hover{background:#ffffff12;color:#fff}.ds-icon:focus-visible{outline:2px solid #fff;outline-offset:4px}"
+    },
+    {
+      "name": "Text Button",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Underlined supporting action.",
+      "html": "<button class=\"ds-text\">Retry connection</button>",
+      "css": ".ds-text{display:inline-flex;align-items:center;gap:7px;background:none;border:0;padding:5px 0;color:#fff;font-family:'DM Sans Variable',sans-serif;font-size:13px;text-decoration:underline;text-underline-offset:4px;cursor:pointer}.ds-text:focus-visible{outline:2px solid #fff;outline-offset:4px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "text-field",
+      "description": "Labeled black input with mobile readable text.",
+      "html": "<label class=\"ds-field\">New branch name<input class=\"ds-input\" value=\"docs/project-polish\" /></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:9px;font-family:'DM Sans Variable',sans-serif;font-size:12px;font-weight:550;color:#e0e0e0}.ds-input{width:100%;background:#090909;border:1px solid #363636;border-radius:9px;padding:12px;color:#eee;font-family:'DM Sans Variable',sans-serif;font-size:13px;line-height:1.5;caret-color:#fff}.ds-input::placeholder{color:#999}.ds-input:focus{border-color:#aaa}.ds-input:focus-visible{outline:2px solid #fff;outline-offset:4px}@media(max-width:760px){.ds-input{font-size:16px}}"
+    },
+    {
+      "name": "Workspace Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-item",
+      "description": "Current-page glass rail items with native buttons.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Workspace navigation\"><button class=\"ds-nav-item ds-nav-active\" aria-current=\"page\">Projects</button><button class=\"ds-nav-item\">Documentation</button></nav>",
+      "css": ".ds-nav{display:flex;flex-direction:column;gap:6px}.ds-nav-item{display:flex;align-items:center;gap:11px;width:100%;background:none;border:1px solid transparent;padding:12px 10px;border-radius:9px;font-family:'DM Sans Variable',sans-serif;font-size:12px;color:#b2b2b2;text-align:left;min-height:43px;cursor:pointer}.ds-nav-item:hover{background:#ffffff07;color:#fff}.ds-nav-item.ds-nav-active{background:#ffffff0e;border-color:#ffffff16;color:#fff}.ds-nav-item:focus-visible{outline:2px solid #fff;outline-offset:4px}"
+    },
+    {
+      "name": "Metadata Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Static compact neutral metadata.",
+      "html": "<span class=\"ds-tag\">Documentation</span>",
+      "css": ".ds-tag{font-family:'DM Sans Variable',sans-serif;font-size:10px;border:1px solid #444;border-radius:5px;padding:4px 7px;white-space:nowrap;color:#bbb}"
+    },
+    {
+      "name": "Repository Card",
+      "kind": "card",
+      "refersTo": "repository-surface",
+      "description": "Glass library container with a separate named repository action.",
+      "html": "<article class=\"ds-card\"><button class=\"ds-card-title\">project-name</button><p class=\"ds-card-description\">A useful repository description.</p><div class=\"ds-card-footer\">Public repository</div></article>",
+      "css": ".ds-card{border:1px solid rgba(255,255,255,.13);border-radius:var(--radius,16px);padding:22px 21px 0;transition:border-color .18s,background .18s;background:rgba(16,16,16,.74);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}.ds-card:hover{border-color:#ffffff40;background:#171717cc}.ds-card-title{display:flex;align-items:center;background:none;border:0;padding:0;color:#f1f1f1;font-family:'DM Sans Variable',sans-serif;font-size:17px;font-weight:600;overflow-wrap:anywhere;text-align:left;cursor:pointer}.ds-card-description{font-family:'DM Sans Variable',sans-serif;font-size:12px;line-height:1.8;color:#b6b6b6;margin:12px 0 0;min-height:43px}.ds-card-footer{margin-top:20px;padding:15px 0;border-top:1px solid #ffffff0f;font-family:'DM Sans Variable',sans-serif;font-size:9px;color:#b2b2b2}.ds-card-title:focus-visible{outline:2px solid #fff;outline-offset:4px}@supports not (backdrop-filter:blur(1px)){.ds-card{background:#151515}}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-card,.ds-card-title{transition:none!important}}"
+    },
+    {
+      "name": "Connection Glass",
+      "kind": "custom",
+      "refersTo": "connection-panel",
+      "description": "Strong dark authentication plate over silver light.",
+      "html": "<section class=\"ds-connection\" aria-labelledby=\"ds-connect-title\"><h2 id=\"ds-connect-title\" class=\"ds-connection-title\">Connect your GitHub</h2><p class=\"ds-connection-copy\">One connection. Your real repositories.</p></section>",
+      "css": ".ds-connection{padding:30px;border-radius:20px;box-shadow:0 25px 90px #0007;background:rgba(14,14,14,.79);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);color:#f2f2f2}.ds-connection-title{font-family:'Sora Variable',sans-serif;font-size:23px;font-weight:500;letter-spacing:-.025em;line-height:1.3;margin:0}.ds-connection-copy{font-family:'DM Sans Variable',sans-serif;color:#bbb;font-size:13px;line-height:1.8;margin:10px 0 0}@media(max-width:760px){.ds-connection{padding:27px;border-radius:17px}}@supports not (backdrop-filter:blur(1px)){.ds-connection{background:#151515}}"
+    },
+    {
+      "name": "File View Controls",
+      "kind": "custom",
+      "refersTo": "file-view-button",
+      "description": "Ordinary grouped view buttons with accurate pressed state.",
+      "html": "<div class=\"ds-file-views\" role=\"group\" aria-label=\"File view\"><button class=\"ds-file-view\" aria-pressed=\"true\">Preview</button><button class=\"ds-file-view\" aria-pressed=\"false\">Edit source</button><button class=\"ds-file-view\" aria-pressed=\"false\">Original</button></div>",
+      "css": ".ds-file-views{display:flex;align-items:center;gap:4px;padding:10px 13px;border-bottom:1px solid #323232}.ds-file-view{display:flex;align-items:center;gap:6px;background:transparent;border:0;padding:6px 9px;border-radius:5px;font-family:'DM Sans Variable',sans-serif;font-size:12px;color:#acacac;cursor:pointer}.ds-file-view[aria-pressed='true']{background:#303030;color:#dddddd}.ds-file-view:hover{color:#e0e0e0}.ds-file-view:focus-visible{outline:2px solid #fff;outline-offset:4px}"
+    },
+    {
+      "name": "Project Intelligence",
+      "kind": "custom",
+      "refersTo": "project-intelligence",
+      "description": "Source-cited project facts on charcoal, with scope disclosure and accurate request usage. Uses native details during review; model requests remain explicit.",
+      "html": "<section class=\"ds-intelligence\" aria-labelledby=\"ds-intelligence-title\"><h2 id=\"ds-intelligence-title\">Understand it. Then improve it.</h2><p>Source-aware analysis, useful documentation, and answers about your code.</p><details><summary>Source evidence</summary><a href=\"#example-source\">sampled/path.ts</a></details></section>",
+      "css": ".ds-intelligence{background:#101010e8;border:1px solid #ffffff20;border-radius:16px;padding:26px;color:#c8c8c8;font-family:\"DM Sans Variable\",sans-serif}.ds-intelligence h2{font-family:\"Sora Variable\",sans-serif;font-weight:500;font-size:23px;line-height:1.4;letter-spacing:-.035em}.ds-intelligence p{font-size:13px;line-height:1.85;max-width:75ch}.ds-intelligence summary{cursor:pointer;font-size:12px}.ds-intelligence a{font-size:12px;color:#ccc;text-decoration:underline;text-underline-offset:3px}.ds-intelligence a:focus-visible,.ds-intelligence summary:focus-visible{outline:2px solid #fff;outline-offset:4px}@media(max-width:760px){.ds-intelligence{padding:21px}.ds-intelligence h2{font-size:21px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Photographic darkroom optical bench",
+    "overview": "Neutral black grounds a workspace of silver light, frosted charcoal plates, and white controls. The native WebGL lens supplies the optical character; precise typography and quiet borders keep repository work readable over it. This records the user's approved black-and-white replacement and the finished implementation.\n\nGlass carries the connection, navigation, library, and supporting workbench regions. Source and original-file content have opaque dark grounds. Motion belongs to the background and loading feedback; working content stays stable.",
+    "keyCharacteristics": [
+      "Neutral black, white ink, and grayscale state treatments.",
+      "Self-hosted Sora headings and DM Sans interface text.",
+      "Refracted silver WebGL light behind restrained glass plates.",
+      "Opaque source editing and responsive repository review.",
+      "Pausable motion, reduced-motion handling, and static visual fallback."
+    ],
+    "rules": [
+      {
+        "name": "The Monochrome State Rule",
+        "body": "Keep states achromatic and retain labels, icons, native controls, and borders so hue is never required to understand selection, failure, or completion.",
+        "section": "colors"
+      },
+      {
+        "name": "The Readable Plate Rule",
+        "body": "Keep glass on surrounding controls and containers while source and original-file content use the opaque Source Black ground.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep black, white, and grayscale across controls, states, account images, and the silver lens.",
+      "Do use self-hosted Sora for headings, DM Sans for interface text, and Consolas for source content.",
+      "Do keep source and original-file content opaque while surrounding regions use glass.",
+      "Do retain named controls, visible focus, readable mobile task labels, and 16px mobile text-entry fields.",
+      "Do preserve pause, reduced motion, bounded WebGL rendering, and static fallback behavior."
+    ],
+    "donts": [
+      "Don't restore the replaced violet accents or introduce colored state cues.",
+      "Don't make visual effects necessary for any repository operation.",
+      "Don't communicate selection or completion through tone alone; retain text, icons, and native control states.",
+      "Don't turn static metadata tags or entire repository cards into unlabeled controls.",
+      "Don't present an in-memory draft as a durable saved artifact or show publish success before a server result."
+    ]
+  }
+}
